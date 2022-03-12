@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Email Signature</title>
+
+    <style>
+        /*==responsive==*/
+        @media(max-width:500px){
+            .main-table{
+                width: 320px!important;
+            }
+            .left-line {
+	            position: absolute!important;
+	            top: -22px!important;
+                left: -60%!important;
+            }
+            .left-col{
+                width: 320px!important;
+                display: flex!important;
+                justify-content: center;
+                margin: 0 auto!important;
+                border-right: none!important;
+            }
+            .right-col{
+                width: 320px!important;
+                display: block!important;
+                text-align: center!important;
+                padding-left: 0!important;
+            }
+            .right-col h2{
+                padding-top: 20px!important;
+            }
+           
+        }
+        /*==responsive==*/
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .left-line{
+            position: absolute;
+            top: -22px;
+        }
+        .left-line::after {
+            content: " ";
+            background-color: rgb(121, 53, 121);
+            width: 71px;
+            height: 7px;
+            position: absolute;
+            top: -2px;
+            left: 0px;
+            border-radius: 10px;
+        }
+        .left-line::before{
+            content: " ";
+            background-color: rgb(121, 53, 121);
+            height: 65px;
+            width: 4px;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            border-radius: 10px;
+        }
+        .right-line {
+	        position: absolute;
+	        bottom: -10%;
+	        right: 0;
+            }
+        
+        .right-line::after {
+            content: " ";
+            background-color: rgb(121, 53, 121);
+            width: 65px;
+            height: 4px;
+            position: absolute;
+            bottom: -2px;
+            right: 0px;
+            border-radius: 10px;
+        }
+        .right-line::before {
+            content: " ";
+            background-color: #793579;
+            width: 7px;
+            height: 71px;
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            border-radius: 10px;
+        }
+        .icon a img{
+            transition: all linear 0.3s;
+        }
+        .icon a img:hover{
+            transform: scale(0.9);
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="main-table" style=" width: 560px; background:linear-gradient(rgba(255, 255, 255, 0.548),rgba(226, 208, 222, 0.815));margin: 0 auto; margin-top: 50px; padding: 0; box-shadow: 0px 0px 10px #ddd;" border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td>
+                <table class="main-table" style="width: 560px; padding: 20px 0px; " border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <!--left Col-->
+                        <td class="left-col" style=" width: 270px; border-right: 1px solid #ddd;">
+                            <table class="left-col" style="width: 270px; margin: 0; padding: 0;" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="text-align: center; position: relative;">
+                                        <div class="left-line"></div>
+                                        <img style="width: 120px; height: 120px; border: 2px solid #fff; border-radius: 50%;" src="https://i.postimg.cc/05Yqn1F7/emailimg.jpg" alt="photo">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="icon" style="text-align: center; padding-top: 18px;">
+                                        <a target="_blank" href="https://www.facebook.com/misrat.mitaly/" style="text-decoration: none;">
+                                            <img src="https://i.postimg.cc/4NFyM0sB/834722-facebook-icon.png" alt="facebook">
+                                        </a>
+                                        <a target="_blank" href="#" style="text-decoration: none;">
+                                            <img src="https://i.postimg.cc/KzNv5q07/2142569-circle-colored-gradient-instagram-media-icon.png" alt="instagram">
+                                        </a>
+                                        <a target="_blank" href="#" style="text-decoration: none;">
+                                            <img src="https://i.postimg.cc/bv1vZNbB/294709-circle-twitter-icon.png" alt="twitter">
+                                        </a>
+                                        <a target="_blank" href="#" style="text-decoration: none;">
+                                            <img src="https://i.postimg.cc/nzZhBbGc/670432-linkedin-in-linked-media-social-icon.png" alt="linkedin">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!--Right Col-->
+                        <td class="right-col" valign="center" style="width: 290px; padding-left: 25px; position: relative;">
+                            <h2 style="line-height: 0.8; margin: 0; color: #666; font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 24px; letter-spacing:2px;">Mukta Akter Mitaly</h2>
+                            
+                            <p style="color: #666; font-family: 'Oswald', sans-serif; margin: 0; margin-top: 5px;border-bottom: 1px solid rgb(192, 190, 190); padding-bottom: 10px; ">Web Designer</p>
+
+                            <p style="color:#666; margin: 0; padding-top: 20px; font-size: 17px; font-family: 'Oswald', sans-serif ; font-weight: 400;"><img src="https://i.postimg.cc/tCpLhR6x/352510-local-phone-icon.png" alt="phone"> 
+                                <a style="text-decoration: none; color: #616060; padding-left: 8px;" href="tel:01757118320">01757118320</a></p>
+
+                            <p style="color:#666; margin: 0; padding-top: 5px; font-size: 17px; font-family: 'Oswald', sans-serif; font-weight: 400;"> <img src="https://i.postimg.cc/c4hPTq75/211660-email-icon.png" alt="email"> 
+                                <a style="text-decoration: none; color: #616060; padding-left: 10px;" href="mailto:mitalyy.dev@gmail.com">mitalyy.dev@gmail.com</a></p>
+
+                            <p style="color:#666; margin: 0; padding-top: 5px; font-size: 17px; font-family: 'Oswald', sans-serif; font-weight: 400;"><img src="https://i.postimg.cc/QdMwy60N/216242-home-icon-1.png" style="padding-right: 10px;" alt="home"> 
+                               Mohammadpur,Dhaka</p>
+
+                            <div class="right-line"></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
